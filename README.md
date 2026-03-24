@@ -19,3 +19,11 @@ In a professional or enterprise environment, the Command Line isn't just a "cool
 Automation at Scale: You cannot "click" a button on 1,000 computers at once. The CLI allows us to write scripts that perform updates, configurations, and deployments across an entire global network simultaneously.
 Precision and Speed: Many administrative tasks (like checking network routing tables or deep-level file permissions) require ten clicks in the GUI but only one string of text in the CLI.
 Low Overhead: When managing remote servers (Windows Server), running a GUI consumes RAM and CPU. The CLI is "lightweight," allowing the hardware to focus 100% of its power on the actual business data rather than rendering pretty windows.
+
+# 🛡️ How do we keep the system secure?
+
+Command-line access is powerful, and with power comes the need for rigorous security protocols. We maintain system integrity through:
+The Principle of Least Privilege (PoLP): We advocate for performing most tasks as a standard user. Administrative privileges (Run as Administrator) are only invoked when absolutely necessary for system-wide changes.
+Command Auditing: We implement logging (such as Process Creation events via Group Policy) to track which commands are executed, helping to detect "Living off the Land" (LotL) attacks where hackers use built-in tools for malicious ends.
+Input Validation: When writing scripts, we ensure all variables are sanitized to prevent command injection vulnerabilities.
+Access Control: Restricting access to sensitive commands (like net user or reg) to only authorized personnel to prevent unauthorized configuration changes or privilege escalation.
