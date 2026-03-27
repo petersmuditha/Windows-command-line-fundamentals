@@ -27,3 +27,77 @@ The Principle of Least Privilege (PoLP): We advocate for performing most tasks a
 Command Auditing: We implement logging (such as Process Creation events via Group Policy) to track which commands are executed, helping to detect "Living off the Land" (LotL) attacks where hackers use built-in tools for malicious ends.
 Input Validation: When writing scripts, we ensure all variables are sanitized to prevent command injection vulnerabilities.
 Access Control: Restricting access to sensitive commands (like net user or reg) to only authorized personnel to prevent unauthorized configuration changes or privilege escalation.
+
+## ⌨️ Essential Interaction: Basic Commands
+
+Once we understand the importance of Linux, the next step is learning how to communicate with the system via the Command Line Interface (CLI). Below are two fundamental commands for any security professional.
+
+### 1. `set` 
+The set command is used to view, set, or remove environment variables in the current Command Prompt session.
+* **Why it matters:** Automation and Scripting: IT administrators use scripts within batch files (.bat) to automate repetitive tasks, such as mapping network drives or installing software, dynamically adapting to the specific user or computer.
+
+Software Configuration: Many business applications read environment variables to determine where to find data or licenses..
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 2. `path` 
+Displays or sets the list of directories contained in the system variable.
+* **Why it matters:** Operational Efficiency: Without proper path configuration, employees would have to type the entire path (e.g., C:\Program Files\CompanySoftware\bin\app.exe) every time. With path, they simply type app.
+Development Tool Management: For IT teams and programmers, path configuration is essential for ensuring compilers, databases, and management tools run without "unrecognized command" errors..
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 3. `Ver` 
+The ver command is the quickest way to see the exact version of your Windows operating system.
+* **Why it matters:** Security and Compliance: Knowing whether PCs are up to date is critical for businesses. ver allows you to instantly identify if a machine is running an outdated version vulnerable to cyber attacks.
+Technical Support (Help Desk): When an employee has a problem, the technician uses ver to determine whether the company software is compatible with that specific build of Windows, speeding up ticket resolution..
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 4. `systeminfo` 
+Displays detailed configuration information about the computer and its operating system, including BIOS version, memory, and network card details.
+* **Why it matters:** Vital for Asset Management. It helps IT departments quickly audit hardware specs and see when the OS was last installed or patched.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 5. `ipconfig` 
+Displays the basic IP address, subnet mask, and default gateway for all network adapters.
+* **Why it matters:** The starting point for any "I can't get on the internet" ticket. It confirms if a machine is actually connected to the office network.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 6. `ipconfig /all` 
+A more verbose version of the previous command that includes DNS servers, MAC addresses (physical IDs), and DHCP lease info.
+* **Why it matters:** Essential for Network Troubleshooting. It tells the IT team exactly which server is providing the IP address and whether the DNS settings are correct for the company domain.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 7. `ping` 
+Sends a small packet of data to an IP address or domain to see if it responds and how long it takes.
+* **Why it matters:** Verifies Reachability. It’s the quickest way to check if a server is "up" or "down" without needing to open a browser or app.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 8. `tracert` 
+Shows the path a packet takes to reach a destination, listing every "hop" (router) along the way.
+* **Why it matters:** Used for Bottleneck Identification. If a branch office can’t reach the main headquarters, tracert shows exactly where the connection is failing in the provider's network.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 9. `nslookup` 
+Queries DNS (Domain Name System) to find the IP address associated with a domain name, or vice versa.
+* **Why it matters:** Critical for Web and Email Services. If employees can't reach "https://www.google.com/search?q=portal.company.com," nslookup tells the admin if the name is being translated correctly to the right server.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 10. `netstat` 
+Displays all active network connections (incoming and outgoing) and listening ports.
+* **Why it matters:** Provides Visibility. It helps admins see if a computer is communicating with an unauthorized external server.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+### 11. `netstat -abon` 
+A powerful variation that shows the executable (program) involved in every connection, along with the Process ID (PID).
+* **Why it matters:** A key Cybersecurity tool. If a computer is infected with malware, netstat -abon can reveal exactly which "hidden" program is sending data to a hacker's server..
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
