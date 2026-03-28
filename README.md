@@ -30,7 +30,7 @@ Access Control: Restricting access to sensitive commands (like net user or reg) 
 
 ## ⌨️ Essential Interaction: Basic Commands
 
-Once we understand the importance of Linux, the next step is learning how to communicate with the system via the Command Line Interface (CLI). Below are two fundamental commands for any security professional.
+Once we understand the importance of the windows command oline , the next step is learning how to communicate with the system via the Command Line Interface (CLI). Below are two fundamental commands for any security professional.
 
 ### 1. `set` 
 The set command is used to view, set, or remove environment variables in the current Command Prompt session.
@@ -43,7 +43,7 @@ Software Configuration: Many business applications read environment variables to
 ### 2. `path` 
 Displays or sets the list of directories contained in the system variable.
 * **Why it matters:** Operational Efficiency: Without proper path configuration, employees would have to type the entire path (e.g., C:\Program Files\CompanySoftware\bin\app.exe) every time. With path, they simply type app.
-Development Tool Management: For IT teams and programmers, path configuration is essential for ensuring compilers, databases, and management tools run without "unrecognized command" errors..
+  Development Tool Management: For IT teams and programmers, path configuration is essential for ensuring compilers, databases, and management tools run without "unrecognized command" errors..
 
   ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
 
@@ -98,6 +98,93 @@ Displays all active network connections (incoming and outgoing) and listening po
 
 ### 11. `netstat -abon` 
 A powerful variation that shows the executable (program) involved in every connection, along with the Process ID (PID).
-* **Why it matters:** A key Cybersecurity tool. If a computer is infected with malware, netstat -abon can reveal exactly which "hidden" program is sending data to a hacker's server..
+ **Why it matters:** A key Cybersecurity tool. If a computer is infected with malware, netstat -abon can reveal exactly which "hidden" program is sending data to a hacker's server.
 
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 12. `dir` 
+Lists the files and subdirectories in the current directory.
+ **Why it matters:** Provides immediate visibility into what is stored on a drive.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 13. `dir /a` 
+Lists all files, including those with hidden or system attributes.
+ **Why it matters:** Critical for Security and Troubleshooting. Malware often hides its files by setting the "hidden" attribute; this command ensures nothing stays out of sight.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 14. `dir /s` 
+Displays files in the current directory and all subdirectories.
+ **Why it matters:** A powerful Search Tool. It allows an admin to find a specific lost file across an entire hard drive from a single command.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 15. `tree` 
+Graphically displays the folder structure of a drive or path.
+ **Why it matters:** Excellent for Documentation. It helps IT managers visualize complex folder hierarchies when organizing shared company drives or project structures.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 16. `mkdir` 
+Creates a new folder.
+ **Why it matters:** Used in Deployment Scripts to automatically create necessary folders for new software or user profiles.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 17. `rmdir` 
+Deletes a folder.
+ **Why it matters:** Used for System Cleanup to remove old, obsolete project folders and reclaim disk space.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 18. `copy` 
+Copies one or more files to another location.
+ **Why it matters:** Fundamental for Data Backups. It allows for the quick duplication of critical configuration files before making changes.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 19. `move` 
+Moves files or renames directories.
+ **Why it matters:** Essential for Data Migration. It allows for the reorganization of files without creating unnecessary duplicates.
+  
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 20. `erase` 
+Deletes one or more files.
+ **Why it matters:** Vital for Privacy and Maintenance. It is used to wipe temporary files or sensitive data that is no longer needed by the organization.
+
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ### 21. `tasklist` 
+Displays a list of all currently running processes (apps and services) along with their memory usage.
+ **Why it matters:** A key Performance and Security Audit tool. If a computer is slow, tasklist identifies the "resource hog." If a computer is suspected of having a virus, it allows the admin to see if any suspicious, unrecognized programs are running in the background.
+  
+  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
+  ## 🏁 Conclusion & Next Steps
+
+This initial documentation covers the fundamental tools required to interact with a Linux system effectively. From basic navigation  to advanced, these commands form the foundation of any **Security Operations Center (SOC)** analyst or **Penetration Tester's** daily workflow.
+
+## 💡 My Philosophy on Technical Writing
+
+> *"I write for clarity and structure. I'm interested in how writing can influence behavior, simplify the complex, and shift how people understand security."*  
+> — inspired by [ananichoumchoum](https://github.com/ananichoumchoum)
+
+In cybersecurity, clear documentation saves time during incidents and ensures that knowledge isn't lost. Every project here is an exercise in making technical concepts accessible and actionable, just like the excellent walkthroughs on TryHackMe.
+
+## 📬 Connect with Me
+
+I'm actively looking for opportunities as a **Cybersecurity Technical Writer** or **Junior SOC Analyst**. If you have feedback on my work, want to collaborate, or know of an opportunity, I'd love to hear from you.
+
+- Remote.com Link: [https://remote.com/jobs/account/profile]
+- Email: petersmuditha@gmail.com
+
+---
+
+*Last updated:  23/03/2026*
+*Documented by [Muditha Anuruddha Peters] during the TryHackMe Pre-Security Path.*
+
+  
+![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
   ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
