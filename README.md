@@ -186,5 +186,4 @@ I'm actively looking for opportunities as a **Cybersecurity Technical Writer** o
 *Documented by [Muditha Anuruddha Peters] during the TryHackMe Pre-Security Path.*
 
   
-![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
-  ![image alt](https://github.com/petersmuditha/Linux-for-cybersecutry/blob/0d8ed979dd37fe43dcf48b0d73b9e676b0888044/Cattura5.PNG)
+
